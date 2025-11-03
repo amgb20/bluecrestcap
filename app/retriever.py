@@ -6,8 +6,6 @@ from openai import OpenAI
 from qdrant_client import QdrantClient
 from rank_bm25 import BM25Okapi
 
-from app.utils.embeddings import generate_fake_embedding
-
 load_dotenv()
 
 
@@ -17,9 +15,12 @@ class HybridRetriever:
     def __init__(self):
         self.embedding_model = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
         self.embedding_dimensions = int(os.getenv("EMBEDDING_DIM", "1536"))
-        self.use_fake_embeddings = os.getenv("USE_FAKE_EMBEDDINGS", "true").lower() != "false"
 
-        self.openai_client = None if self.use_fake_embeddings else OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY must be set for HybridRetriever when using OpenAI embeddings.")
+
+        self.openai_client = OpenAI(api_key=api_key)
         self.qdrant_host = os.getenv("QDRANT_HOST", "localhost")
         self.qdrant_port = int(os.getenv("QDRANT_PORT", "6333"))
         self.collection_name = os.getenv("QDRANT_COLLECTION_NAME", "rag_documents")
@@ -67,9 +68,6 @@ class HybridRetriever:
     
     def generate_embedding(self, text: str) -> List[float]:
         """Generate embedding for a single text."""
-        if self.use_fake_embeddings or self.openai_client is None:
-            return generate_fake_embedding(text, dim=self.embedding_dimensions)
-
         response = self.openai_client.embeddings.create(
             input=[text],
             model=self.embedding_model

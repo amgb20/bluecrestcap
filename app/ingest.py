@@ -11,7 +11,6 @@ from openai import OpenAI
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 
-from app.utils.embeddings import generate_fake_embeddings
 from app.utils.ocr import extract_pdf_text
 
 load_dotenv()
@@ -37,9 +36,12 @@ class DocumentIngestion:
     def __init__(self):
         self.embedding_model = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
         self.embedding_dimensions = int(os.getenv("EMBEDDING_DIM", "1536"))
-        self.use_fake_embeddings = os.getenv("USE_FAKE_EMBEDDINGS", "true").lower() != "false"
 
-        self.openai_client = None if self.use_fake_embeddings else OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY must be set for DocumentIngestion when using OpenAI embeddings.")
+
+        self.openai_client = OpenAI(api_key=api_key)
         self.qdrant_host = os.getenv("QDRANT_HOST", "localhost")
         self.qdrant_port = int(os.getenv("QDRANT_PORT", "6333"))
         self.collection_name = os.getenv("QDRANT_COLLECTION_NAME", "rag_documents")
@@ -235,9 +237,6 @@ class DocumentIngestion:
     
     def generate_embeddings(self, texts: List[str]) -> List[List[float]]:
         """Generate embeddings for a list of texts."""
-        if self.use_fake_embeddings or self.openai_client is None:
-            return generate_fake_embeddings(texts, dim=self.embedding_dimensions)
-
         response = self.openai_client.embeddings.create(
             input=texts,
             model=self.embedding_model

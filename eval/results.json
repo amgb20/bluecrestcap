@@ -17,8 +17,8 @@
         "desk_chat.csv"
       ],
       "metadata": {
-        "query_id": "8eeee377-654b-48d2-bf22-1743de11b8fb",
-        "timestamp": "2025-11-03T15:40:39.549722",
+        "query_id": "187c11ee-7a7b-4f55-a89c-42ce26049434",
+        "timestamp": "2025-11-03T16:03:47.390192",
         "retrieval_latency_ms": null,
         "llm_latency_ms": null,
         "total_latency_ms": 0.0,
@@ -28,7 +28,7 @@
         ],
         "token_count": null
       },
-      "latency_ms": 2283.0300331115723,
+      "latency_ms": 3411.0031127929688,
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "citations": [],
       "sources": [],
       "metadata": {
-        "query_id": "f058b3a8-b901-4b55-9fa9-214e107f1fd9",
-        "timestamp": "2025-11-03T15:40:42.301398",
+        "query_id": "e2ca8f78-2469-49a1-a5ac-17d3278f5a18",
+        "timestamp": "2025-11-03T16:03:49.931619",
         "retrieval_latency_ms": null,
         "llm_latency_ms": null,
         "total_latency_ms": 0.0,
@@ -47,13 +47,13 @@
         "tools_used": [],
         "token_count": null
       },
-      "latency_ms": 2245.3529834747314,
+      "latency_ms": 2038.0568504333496,
       "error": null
     },
     {
       "query": "Did the Q2 letter reference SPY?",
       "success": true,
-      "answer": "Yes, the Q2 letter referenced SPY. It noted that US equities, proxied by SPY, extended gains during the quarter, with SPY quoted at $529.40 on June 10, 2025, before consolidating into month-end [q2_letter.html@0]. Additionally, it discussed breadth indicators related to SPY constituents [q2_letter.html@1].",
+      "answer": "Yes, the Q2 letter referenced SPY. It noted that US equities, as proxied by SPY, extended gains during the quarter, highlighting a higher sensitivity around macro data releases. At one point during the quarter, SPY was quoted at $529.40 on June 10, 2025, before consolidating into month-end [q2_letter.html@0].",
       "citations": [
         {
           "doc_id": "bbbbd955-250e-b4fb-fe77-0df71f8f7c89",
@@ -61,21 +61,14 @@
           "end_char": 373,
           "text_snippet": "1. Market Overview\nUS equities, proxied by SPY, extended gains during the quarter with higher sensitivity around macro data releases. For reference during the quarter, SPY was quoted at529.40 on 2025\u2011...",
           "source": "q2_letter.html"
-        },
-        {
-          "doc_id": "e1a57ca2-fdc4-c623-d9a8-1a36fd63ba28",
-          "start_char": 0,
-          "end_char": 266,
-          "text_snippet": "2. Breadth & Concentration\nThe top decile of constituents contributed a disproportionately large share of returns. Breadth indicators (advance/decline, % above 50DMA) trended lower through late June.\n...",
-          "source": "q2_letter.html"
         }
       ],
       "sources": [
         "q2_letter.html"
       ],
       "metadata": {
-        "query_id": "75226ca7-2c47-41df-a6ea-f9176b708a1e",
-        "timestamp": "2025-11-03T15:40:46.704753",
+        "query_id": "1af637c9-a1e8-4681-8faa-c3629caeb0d4",
+        "timestamp": "2025-11-03T16:03:56.633262",
         "retrieval_latency_ms": null,
         "llm_latency_ms": null,
         "total_latency_ms": 0.0,
@@ -85,19 +78,19 @@
         ],
         "token_count": null
       },
-      "latency_ms": 3899.2321491241455,
+      "latency_ms": 6199.581146240234,
       "error": null
     },
     {
       "query": "What factors were tilted towards in Q2?",
       "success": true,
-      "answer": "In Q2, the fund tilted towards the following factors:\n\n1. **Momentum**: Long exposure of +0.35, contributing +42 basis points (bps).\n2. **Quality**: Long exposure of +0.25, contributing +18 bps.\n3. **Value**: Neutralizer with an exposure of -0.05, contributing -4 bps.\n4. **Volatility**: Short exposure of -0.10, contributing +7 bps.\n\nThese contributions are illustrative and assume a weekly rebalance with a 1 basis point cost [q2_letter.html@2].",
+      "answer": "In Q2, the following factors were tilted towards:\n\n1. **Momentum**: Long exposure of +0.35, contributing +42 basis points (bps).\n2. **Quality**: Long exposure of +0.25, contributing +18 bps.\n3. **Value**: Neutralizer with an exposure of -0.05, contributing -4 bps.\n4. **Volatility**: Short exposure of -0.10, contributing +7 bps.\n\nThese contributions are illustrative and assume a weekly rebalance with a transaction cost of 1 basis point [q2_letter.html@8].",
       "citations": [
         {
-          "doc_id": "68efe64f-e32a-5601-a1fd-f42f0b034a9d",
+          "doc_id": "5e5fd5d6-8bc3-de51-a558-de53dfb21840",
           "start_char": 0,
-          "end_char": 220,
-          "text_snippet": "3. Factor Attribution\nFactorExposureAvg ExposureQ2 Contribution (bps)MomentumLong+0.35+42QualityLong+0.25+18ValueNeutralizer-0.05-4VolatilityShort-0.10+7Illustrative contributions; assumes weekly reba...",
+          "end_char": 248,
+          "text_snippet": "Factor | Exposure | Avg Exposure | Q2 Contribution (bps)\nMomentum | Long | +0.35 | +42\nQuality | Long | +0.25 | +18\nValue | Neutralizer | -0.05 | -4\nVolatility | Short | -0.10 | +7\nIllustrative contri...",
           "source": "q2_letter.html"
         }
       ],
@@ -105,8 +98,8 @@
         "q2_letter.html"
       ],
       "metadata": {
-        "query_id": "3d5d7114-7852-4a42-bc7a-f0c494af23fc",
-        "timestamp": "2025-11-03T15:40:52.805364",
+        "query_id": "5bd7c05e-aa3d-4e28-86e0-bd18343629ec",
+        "timestamp": "2025-11-03T16:04:01.946616",
         "retrieval_latency_ms": null,
         "llm_latency_ms": null,
         "total_latency_ms": 0.0,
@@ -116,7 +109,7 @@
         ],
         "token_count": null
       },
-      "latency_ms": 5599.802255630493,
+      "latency_ms": 4808.319091796875,
       "error": null
     },
     {
@@ -126,8 +119,8 @@
       "citations": [],
       "sources": [],
       "metadata": {
-        "query_id": "32b3cbaf-cb38-43fd-bfe0-0088e45da4d5",
-        "timestamp": "2025-11-03T15:40:54.966772",
+        "query_id": "ad737986-c0bd-4e7c-90a7-d9be8f400f76",
+        "timestamp": "2025-11-03T16:04:04.257606",
         "retrieval_latency_ms": null,
         "llm_latency_ms": null,
         "total_latency_ms": 0.0,
@@ -135,18 +128,18 @@
         "tools_used": [],
         "token_count": null
       },
-      "latency_ms": 1659.7390174865723,
+      "latency_ms": 1811.0980987548828,
       "error": null
     },
     {
       "query": "Compare SPY performance to QQQ over the last 10 days.",
       "success": true,
-      "answer": "The performance comparison for SPY and QQQ over the last 10 days is as follows:\n\n- **SPY**: $527.15 on June 20, 2025\n- **QQQ**: $466.78 on June 20, 2025\n\nThis information reflects the prices on the specified date, but does not provide the performance trend over the entire 10-day period. If you need detailed performance data over those days, please specify.",
+      "answer": "The performance comparison for SPY and QQQ over the last 10 days is as follows:\n\n- **SPY**: $527.15 on June 20, 2025\n- **QQQ**: $466.78 on June 20, 2025\n\nThis information reflects the prices on the specified date, but further details on the performance trend over the last 10 days are not available in the provided data.",
       "citations": [],
       "sources": [],
       "metadata": {
-        "query_id": "3ecdd0ac-a92c-43b7-b516-44654a879221",
-        "timestamp": "2025-11-03T15:40:58.986035",
+        "query_id": "325c1504-ed2b-4ed6-8a90-41769a6b3564",
+        "timestamp": "2025-11-03T16:04:08.379069",
         "retrieval_latency_ms": null,
         "llm_latency_ms": null,
         "total_latency_ms": 0.0,
@@ -154,7 +147,7 @@
         "tools_used": [],
         "token_count": null
       },
-      "latency_ms": 3513.9410495758057,
+      "latency_ms": 3616.480827331543,
       "error": null
     },
     {
@@ -174,8 +167,8 @@
         "q2_letter.html"
       ],
       "metadata": {
-        "query_id": "26e76d09-9d52-49e0-b290-6f06cf0cf397",
-        "timestamp": "2025-11-03T15:41:01.974311",
+        "query_id": "9c8148d4-2817-4194-976b-3a486e82a6fc",
+        "timestamp": "2025-11-03T16:04:11.488920",
         "retrieval_latency_ms": null,
         "llm_latency_ms": null,
         "total_latency_ms": 0.0,
@@ -185,33 +178,26 @@
         ],
         "token_count": null
       },
-      "latency_ms": 2488.663911819458,
+      "latency_ms": 2605.125904083252,
       "error": null
     },
     {
       "query": "Summarise breadth observations mentioned in the letters.",
       "success": true,
-      "answer": "The letters indicate several observations regarding market breadth:\n\n1. **Earnings Dispersion**: There was notable dispersion in large-cap technology earnings, primarily driven by a few mega-cap companies. This trend continued later in the quarter, where earnings-driven dispersion persisted within the mega-cap technology sector, but breadth failed to confirm the overall strength indicated by headline figures [q2_letter.html@6].\n\n2. **Concentration of Returns**: The top decile of constituents contributed a disproportionately large share of returns, suggesting a high level of concentration in performance among a small number of stocks [q2_letter.html@1].\n\n3. **Declining Breadth Indicators**: Breadth indicators, such as advance/decline ratios and the percentage of stocks above their 50-day moving average (DMA), trended lower through late June, indicating weakening breadth in the market [q2_letter.html@1].\n\nThese observations highlight concerns about the sustainability of market strength given the concentration of returns and declining breadth indicators.",
+      "answer": "The letters indicate that breadth observations showed a declining trend in breadth indicators, such as advance/decline ratios and the percentage of constituents above their 50-day moving average (DMA), particularly through late June. Notably, the top decile of constituents contributed a disproportionately large share of returns, suggesting a concentration of performance among a few names. Additionally, there was significant dispersion in earnings within large-cap technology, with a few mega-cap companies driving outsized contributions, while broader market breadth failed to confirm the overall strength indicated by headline figures [q2_letter.html@1][q2_letter.html@6].",
       "citations": [
+        {
+          "doc_id": "e1a57ca2-fdc4-c623-d9a8-1a36fd63ba28",
+          "start_char": 0,
+          "end_char": 266,
+          "text_snippet": "2. Breadth & Concentration\nThe top decile of constituents contributed a disproportionately large share of returns. Breadth indicators (advance/decline, % above 50DMA) trended lower through late June.\n...",
+          "source": "q2_letter.html"
+        },
         {
           "doc_id": "8ca04275-4e58-7e63-e426-aa54ef3fb22d",
           "start_char": 0,
           "end_char": 278,
           "text_snippet": "7. Earnings Commentary\nWe observed dispersion in large\u2011cap technology earnings with outsized contributions from a handful of mega-cap names.\nLater in the quarter, earnings\u2011driven dispersion persisted ...",
-          "source": "q2_letter.html"
-        },
-        {
-          "doc_id": "e1a57ca2-fdc4-c623-d9a8-1a36fd63ba28",
-          "start_char": 0,
-          "end_char": 266,
-          "text_snippet": "2. Breadth & Concentration\nThe top decile of constituents contributed a disproportionately large share of returns. Breadth indicators (advance/decline, % above 50DMA) trended lower through late June.\n...",
-          "source": "q2_letter.html"
-        },
-        {
-          "doc_id": "e1a57ca2-fdc4-c623-d9a8-1a36fd63ba28",
-          "start_char": 0,
-          "end_char": 266,
-          "text_snippet": "2. Breadth & Concentration\nThe top decile of constituents contributed a disproportionately large share of returns. Breadth indicators (advance/decline, % above 50DMA) trended lower through late June.\n...",
           "source": "q2_letter.html"
         }
       ],
@@ -219,8 +205,8 @@
         "q2_letter.html"
       ],
       "metadata": {
-        "query_id": "0c7921fc-b291-4c9a-9da2-4c5ffb5a8307",
-        "timestamp": "2025-11-03T15:41:09.051185",
+        "query_id": "6e825612-e759-41bc-a61d-c506a6ae8a21",
+        "timestamp": "2025-11-03T16:04:17.116189",
         "retrieval_latency_ms": null,
         "llm_latency_ms": null,
         "total_latency_ms": 0.0,
@@ -230,13 +216,13 @@
         ],
         "token_count": null
       },
-      "latency_ms": 6571.250200271606,
+      "latency_ms": 5121.548175811768,
       "error": null
     },
     {
       "query": "According to the addendum, what SPY close and date should be preferred when answering 'latest' close questions?",
       "success": true,
-      "answer": "According to the addendum, for answering \"latest close\" questions regarding SPY, the most recent verified mark should be relied upon. Specifically, SPY was quoted at $529.40 on June 10, 2025, which is the preferred close to reference [q2_letter.html@0].",
+      "answer": "The preferred SPY close for answering 'latest' close questions, according to the addendum, is $529.40 on June 10, 2025 [q2_letter.html@0].",
       "citations": [
         {
           "doc_id": "bbbbd955-250e-b4fb-fe77-0df71f8f7c89",
@@ -250,8 +236,8 @@
         "q2_letter.html"
       ],
       "metadata": {
-        "query_id": "7e288355-2c10-4c6d-9af3-f9dafc30eafe",
-        "timestamp": "2025-11-03T15:41:13.656121",
+        "query_id": "28558640-adb4-4a98-9c6c-47af9792b353",
+        "timestamp": "2025-11-03T16:04:20.792149",
         "retrieval_latency_ms": null,
         "llm_latency_ms": null,
         "total_latency_ms": 0.0,
@@ -261,13 +247,13 @@
         ],
         "token_count": null
       },
-      "latency_ms": 4099.891185760498,
+      "latency_ms": 3174.121141433716,
       "error": null
     },
     {
       "query": "Which document discusses liquidity filters and the $5mm ADDV threshold?",
       "success": true,
-      "answer": "The discussion about liquidity filters and the $5 million average daily dollar volume (ADDV) threshold is found in the Q2 letter, which states that \"low-liquidity names (average daily dollar volume below $5mm) were screened out\" [q2_letter.html@4]. Additionally, a team chat also mentions that \"liquidity names under $5mm ADDV excluded per process\" [desk_chat.csv@4].",
+      "answer": "The discussion about liquidity filters and the $5 million average daily dollar volume (ADDV) threshold is found in the Q2 letter, which states that low-liquidity names (those with an average daily dollar volume below $5 million) were screened out as part of the risk and liquidity management process [q2_letter.html@4]. Additionally, a team chat confirms that liquidity names under the $5 million ADDV were excluded per the established process [desk_chat.csv@4].",
       "citations": [
         {
           "doc_id": "0c2befe9-3717-7b4f-e774-e8407461e807",
@@ -285,12 +271,12 @@
         }
       ],
       "sources": [
-        "q2_letter.html",
-        "desk_chat.csv"
+        "desk_chat.csv",
+        "q2_letter.html"
       ],
       "metadata": {
-        "query_id": "743178aa-0794-420e-8813-4906349d1f2a",
-        "timestamp": "2025-11-03T15:41:18.272982",
+        "query_id": "0ecb8ca5-392d-4934-bea7-312f04244f62",
+        "timestamp": "2025-11-03T16:04:26.487408",
         "retrieval_latency_ms": null,
         "llm_latency_ms": null,
         "total_latency_ms": 0.0,
@@ -300,7 +286,7 @@
         ],
         "token_count": null
       },
-      "latency_ms": 4115.319013595581,
+      "latency_ms": 5187.755107879639,
       "error": null
     }
   ],
@@ -312,16 +298,16 @@
       "success_rate": 100.0
     },
     "latency": {
-      "mean_ms": 3647.6221799850464,
-      "median_ms": 3706.5865993499756,
-      "p50_ms": 3706.5865993499756,
-      "p95_ms": 6134.098625183105,
-      "p99_ms": 6483.819885253906,
-      "min_ms": 1659.7390174865723,
-      "max_ms": 6571.250200271606
+      "mean_ms": 3797.3089456558228,
+      "median_ms": 3513.741970062256,
+      "p50_ms": 3513.741970062256,
+      "p95_ms": 5744.259428977965,
+      "p99_ms": 6108.516802787781,
+      "min_ms": 1811.0980987548828,
+      "max_ms": 6199.581146240234
     },
     "citations": {
-      "mean_per_query": 1.1,
+      "mean_per_query": 0.9,
       "queries_with_citations": 7,
       "citation_coverage_pct": 70.0
     },
