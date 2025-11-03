@@ -1,0 +1,9 @@
+timestamp,author,text
+2025-06-01T09:12:00Z,analyst,"Check SPY vs QQQ dispersion last 10d"
+2025-06-01T10:45:00Z,trader,"We need pre-clearance reminder in the morning standup"
+2025-06-02T07:20:00Z,analyst,"EURUSD feels heavy into CPI"
+2025-06-02T15:40:00Z,pm,"Quality factor still leading? Let's sanity check factor heatmap"
+2025-06-03T11:05:00Z,analyst,"Liquidity names under $5mm ADDV excluded per process"
+2025-06-04T08:30:00Z,trader,"What's our stance on momentum after last week's move?"
+2025-06-05T16:10:00Z,pm,"Reminder: narrative ≠ signal; quote source docs for macro notes"
+2025-06-06T13:22:00Z,researcher,"SPY vs growth baskets — re‑run breadth stats w/ equal‑weight"
